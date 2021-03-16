@@ -1,0 +1,33 @@
+{
+  "name": "digiwhale",
+  "version": "1.0.0",
+  "description": "A Digital Product Design Agency Landing Page",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass -w scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadrakhosravi/digiwhale.git"
+  },
+  "keywords": [
+    "Landing",
+    "Web Design",
+    "Ditigal",
+    "Product",
+    "Design",
+    "Agency"
+  ],
+  "author": "Sadra Khosravi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sadrakhosravi/digiwhale/issues"
+  },
+  "homepage": "https://github.com/sadrakhosravi/digiwhale#readme"
+}
