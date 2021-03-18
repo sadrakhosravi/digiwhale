@@ -1,0 +1,22 @@
+section.hero {
+  height: 100vh;
+  width: 100%;
+  padding-top: 9rem;
+
+  .section-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/img/header-bg.svg'), linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%);
+    background-size: cover;
+    clip-path: ellipse(75% 70% at 50% 30%);
+    z-index: -1;
+  }
+}
+
+section.hero-img {
+  margin-top: -20rem;
+  z-index: 2;
+}
