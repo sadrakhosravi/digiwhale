@@ -165,7 +165,7 @@ header {
 .card {
   box-shadow: $box-shadow;
   height: 32.5rem;
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.2s ease;
 
   .card-icon {
     width: 12rem;
@@ -176,5 +176,22 @@ header {
   &:hover {
     background-color: $primary;
     color: $gray-100;
+  }
+
+  .card-image-left {
+    width: 50rem;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.card-horizontal {
+  height: auto;
+
+  &:hover {
+    color: #3b3e43;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(40px);
+    backdrop-filter: saturate(180%) blur(40px);
   }
 }

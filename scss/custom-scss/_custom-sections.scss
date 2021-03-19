@@ -18,3 +18,10 @@
   background-image: url('/img/solutions-section-bg.svg');
   background-size: cover;
 }
+
+.section-process {
+  background-image: url('/img/our-process-bg-overlay.svg'),
+    linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
