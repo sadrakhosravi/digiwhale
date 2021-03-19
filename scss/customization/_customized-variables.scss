@@ -1,0 +1,72 @@
+$gray-100: #f9f8ff;
+$blue: #57b3fe;
+$primary: $blue;
+
+$body-bg: $gray-100;
+$body-color: #3b3e43;
+
+//Font
+$font-size-root: 0.625rem; // 10px = 1rem
+$font-size-base: 1.6rem; // Default font size 16px
+
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 3.25;
+$h3-font-size: $font-size-base * 2.5;
+$h4-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base;
+
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+
+$headings-font-weight: $font-weight-bold;
+
+$font-family-sans-serif: 'DM Sans', sans-serif;
+
+//Button
+$input-btn-padding-y: 1.2rem;
+$input-btn-padding-x: 3rem;
+
+$btn-link-color: $primary;
+$btn-link-hover-color: $primary;
+
+$btn-transition: all 0.4s ease;
+
+//Global Border
+$border-radius: 50rem; //Pill border radius
+
+//Navigation
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-x: 1rem;
+$nav-link-color: $gray-100;
+$nav-link-hover-color: $gray-100;
+$nav-link-transition: all 0.4s ease;
+
+$navbar-nav-link-padding-x: 0;
+
+//Spaces
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 2,
+  2: $spacer,
+  3: $spacer * 1.5,
+  4: $spacer * 3,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+);
+
+//Card
+$card-border-radius: 1.5rem;
+$card-spacer-y: $spacer * 4;
+$card-spacer-x: $spacer * 4;
+$card-title-spacer-y: $spacer;
+$card-border-width: 0;
+
+//Box Shadow
+$box-shadow: 0px 2rem 5rem rgba(59, 62, 67, 0.05);
