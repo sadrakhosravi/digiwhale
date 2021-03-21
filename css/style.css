@@ -9091,13 +9091,13 @@ header {
   .logo:hover > svg path {
     fill: #57b3fe; }
 
-.main-navigation {
+.navigation {
   padding: 0; }
-  .main-navigation li {
+  .navigation li {
     position: relative; }
-    .main-navigation li:not(:last-child) {
+    .navigation li:not(:last-child) {
       margin-right: 4rem; }
-    .main-navigation li::after {
+    .navigation li::after {
       content: '';
       display: block;
       width: 0;
@@ -9107,9 +9107,9 @@ header {
       bottom: 0;
       left: 0;
       transition: 0.4s all ease; }
-    .main-navigation li:hover::after {
+    .navigation li:hover::after {
       width: 100%; }
-    .main-navigation li a {
+    .navigation li a {
       text-transform: uppercase; }
 
 .mobile-menu-icon {
@@ -9154,7 +9154,8 @@ header {
 
 .above-title {
   margin-bottom: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500; }
 
 .card {
   box-shadow: 0px 2rem 5rem rgba(59, 62, 67, 0.05);
@@ -9180,6 +9181,22 @@ header {
     -webkit-backdrop-filter: saturate(180%) blur(40px);
     backdrop-filter: saturate(180%) blur(40px); }
 
+.row-clients {
+  height: 10rem; }
+  .row-clients .col {
+    margin: auto 0; }
+  .row-clients .clients {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0.7;
+    transition: opacity 0.4s ease; }
+    .row-clients .clients:hover {
+      opacity: 1; }
+
+.divider {
+  opacity: 0.3; }
+
 .section-hero {
   width: 100%; }
   .section-hero .section-bg {
@@ -9201,3 +9218,27 @@ header {
   background-image: url("/img/our-process-bg-overlay.svg"), linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%);
   background-size: cover;
   background-blend-mode: overlay; }
+
+.section-get-started {
+  background-image: linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%); }
+
+.footer {
+  background-color: #0d0d0d; }
+  .footer-icon-link {
+    transition: 0.4s all ease; }
+    .footer-icon-link:not(:last-child) {
+      margin-right: 2rem; }
+    .footer-icon-link:hover {
+      opacity: 0.7; }
+  .footer-icon {
+    width: 3rem; }
+  .footer br {
+    width: 100%;
+    height: 3px;
+    background-color: #fff; }
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s color ease; }
+    .footer-link:not(:last-child) {
+      margin-right: 2rem; }

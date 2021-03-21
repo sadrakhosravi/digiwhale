@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('/img/header-bg.svg'), linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%);
+    background-image: url('/img/header-bg.svg'), $background-gradient;
     background-size: cover;
     clip-path: ellipse(75% 55% at 50% 25%);
     z-index: -1;
@@ -20,8 +20,11 @@
 }
 
 .section-process {
-  background-image: url('/img/our-process-bg-overlay.svg'),
-    linear-gradient(249.78deg, #35d3ff -0.64%, #a963fb 103.6%);
+  background-image: url('/img/our-process-bg-overlay.svg'), $background-gradient;
   background-size: cover;
   background-blend-mode: overlay;
+}
+
+.section-get-started {
+  background-image: $background-gradient;
 }
