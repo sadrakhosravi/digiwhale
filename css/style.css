@@ -9047,9 +9047,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-p {
-  font-weight: 400; }
-
 header {
   padding: 0.75rem 0;
   height: 90px;
@@ -9061,6 +9058,38 @@ header {
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease; }
+  header .logo {
+    background-size: 5rem;
+    margin-top: 0.4rem;
+    cursor: pointer; }
+    header .logo svg path {
+      transition: 0.4s all ease; }
+    header .logo:hover > svg path {
+      fill: #57b3fe; }
+  header .mobile-menu-icon {
+    position: relative;
+    cursor: pointer;
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0.5rem; }
+    header .mobile-menu-icon .top-line {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2px;
+      background-color: #fff; }
+    header .mobile-menu-icon .bottom-line {
+      content: '';
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0;
+      width: 2rem;
+      height: 2px;
+      background-color: #fff; }
+    header .mobile-menu-icon:hover header .mobile-menu-icon::before {
+      transform: translateX(-50px); }
 
 .header-scroll {
   background: rgba(255, 255, 255, 0.8);
@@ -9082,14 +9111,8 @@ header {
   .header-scroll .logo svg path {
     fill: #212529; }
 
-.logo {
-  background-size: 5rem;
-  margin-top: 0.4rem;
-  cursor: pointer; }
-  .logo svg path {
-    transition: 0.4s all ease; }
-  .logo:hover > svg path {
-    fill: #57b3fe; }
+p {
+  font-weight: 400; }
 
 .navigation {
   padding: 0; }
@@ -9111,31 +9134,6 @@ header {
       width: 100%; }
     .navigation li a {
       text-transform: uppercase; }
-
-.mobile-menu-icon {
-  position: relative;
-  cursor: pointer;
-  width: 3rem;
-  height: 1.5rem;
-  padding: 0.5rem; }
-  .mobile-menu-icon .top-line {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 2rem;
-    height: 2px;
-    background-color: #fff; }
-  .mobile-menu-icon .bottom-line {
-    content: '';
-    position: absolute;
-    bottom: 0.5rem;
-    left: 0;
-    width: 2rem;
-    height: 2px;
-    background-color: #fff; }
-  .mobile-menu-icon:hover .mobile-menu-icon::before {
-    transform: translateX(-50px); }
 
 .btn {
   color: #57b3fe;
@@ -9160,7 +9158,7 @@ header {
 .card {
   box-shadow: 0px 2rem 5rem rgba(59, 62, 67, 0.05);
   height: 32.5rem;
-  transition: background-color 0.4s ease-in-out, color 0.2s ease; }
+  transition: background-color 0.4s ease-in-out, color 0.2s ease, transform 0.4s ease, box-shadow 0.3s ease-in; }
   .card .card-icon {
     width: 12rem;
     height: 12rem;
@@ -9173,29 +9171,55 @@ header {
     height: auto;
     margin: 0 auto; }
 
+.card-solution:hover {
+  transform: scale(1.1);
+  z-index: 999;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); }
+
+@media (max-width: 991.98px) {
+  .card-solution {
+    margin: 2rem 0rem; } }
+
 .card-horizontal {
   height: auto; }
   .card-horizontal:hover {
     color: #3b3e43;
-    background: rgba(255, 255, 255, 0.7);
-    -webkit-backdrop-filter: saturate(180%) blur(40px);
-    backdrop-filter: saturate(180%) blur(40px); }
+    background-color: #fff;
+    transform: translateY(-1rem);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); }
 
-.row-clients {
-  height: 10rem; }
-  .row-clients .col {
-    margin: auto 0; }
-  .row-clients .clients {
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-    opacity: 0.7;
-    transition: opacity 0.4s ease; }
-    .row-clients .clients:hover {
-      opacity: 1; }
+.row-clients .col {
+  margin: auto 0; }
+
+.row-clients .clients {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  opacity: 0.7;
+  transition: opacity 0.4s ease; }
+  .row-clients .clients:hover {
+    opacity: 1; }
 
 .divider {
   opacity: 0.3; }
+
+@media (max-width: 767.98px) {
+  .py-12 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important; }
+  .mt-10 {
+    margin-top: 6rem !important; } }
+
+@media (max-width: 575.98px) {
+  .py-12 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important; }
+  .mt-10 {
+    margin-top: 6rem !important; } }
+
+@media (max-width: 991.98px) {
+  .container {
+    padding: 0rem 2rem; } }
 
 .section-hero {
   width: 100%; }
@@ -9209,6 +9233,9 @@ header {
     background-size: cover;
     clip-path: ellipse(75% 55% at 50% 25%);
     z-index: -1; }
+  @media (max-width: 575.98px) {
+    .section-hero .section-bg {
+      clip-path: ellipse(95% 37% at 50% 25%); } }
 
 .section-solution {
   background-image: url("/img/solutions-section-bg.svg");
